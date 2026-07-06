@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>مكافحة الحشرات - جازان | أبو عريش - صامطة - صبيا - بيش</title>
+<meta name="description" content="خدمة مكافحة ورش الحشرات في جازان وأبو عريش وصامطة وصبيا وبيش. اتصل الآن 0557889258">
+<style>
+  :root{
+    --primary:#0e7c66;
+    --primary-dark:#095949;
+    --accent:#ffb400;
+    --whatsapp:#25d366;
+    --danger:#d64545;
+    --bg:#f2f7f5;
+    --card:#ffffff;
+    --text:#183028;
+    --muted:#5c7770;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{
+    width:100%;
+    min-height:100%;
+    background:linear-gradient(160deg,#0e7c66 0%, #0a5a49 45%, #0e7c66 100%);
+    font-family:'Tahoma','Segoe UI',Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+  body{
+    display:flex;
+    justify-content:center;
+    padding:24px 14px 40px;
+  }
+  .wrap{
+    width:100%;
+    max-width:460px;
+  }
+  .card{
+    background:var(--card);
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    animation:fadeUp .6s ease both;
+  }
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(24px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,.15), transparent 40%),
+      linear-gradient(135deg,var(--primary) 0%, var(--primary-dark) 100%);
+    color:#fff;
+    padding:28px 20px 26px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"🐜🕷️🪳";
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    font-size:34px;
+    opacity:.12;
+    transform:rotate(-8deg) scale(1.3);
+    pointer-events:none;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#3a2900;
+    font-weight:bold;
+    font-size:12px;
+    padding:5px 14px;
+    border-radius:999px;
+    margin-bottom:10px;
+    letter-spacing:.5px;
+    position:relative;
+    z-index:1;
+  }
+  .hero h1{
+    font-size:25px;
+    line-height:1.5;
+    position:relative;
+    z-index:1;
+    text-shadow:0 2px 6px rgba(0,0,0,.25);
+  }
+  .hero p.sub{
+    margin-top:8px;
+    font-size:14px;
+    opacity:.92;
+    position:relative;
+    z-index:1;
+  }
+  .cities{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-top:14px;
+    position:relative;
+    z-index:1;
+  }
+  .cities span{
+    background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.35);
+    padding:5px 12px;
+    border-radius:999px;
+    font-size:12.5px;
+  }
+
+  .offer{
+    margin:-18px 16px 0;
+    background:linear-gradient(120deg,var(--accent),#ff8a00);
+    color:#3a2200;
+    border-radius:16px;
+    padding:14px 16px;
+    text-align:center;
+    position:relative;
+    z-index:2;
+    box-shadow:0 10px 24px rgba(255,140,0,.35);
+  }
+  .offer .label{
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:.5px;
+    opacity:.85;
+  }
+  .offer .price{
+    font-size:22px;
+    font-weight:900;
+    margin-top:2px;
+  }
+  .offer .note{
+    font-size:11.5px;
+    margin-top:4px;
+    opacity:.9;
+  }
+
+  .section{
+    padding:20px 20px 6px;
+  }
+  .section h2{
+    font-size:16px;
+    color:var(--primary-dark);
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:12px;
+  }
+  .section h2 .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--accent);
+    flex-shrink:0;
+  }
+
+  .services-list{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  .services-list li{
+    background:var(--bg);
+    border:1px solid #e1ede8;
+    border-radius:12px;
+    padding:9px 10px;
+    font-size:13px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:var(--text);
+  }
+  .services-list li::before{
+    content:"✔";
+    color:var(--primary);
+    font-weight:bold;
+    font-size:12px;
+  }
+
+  .features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .feature{
+    background:var(--bg);
+    border-radius:14px;
+    padding:14px 10px;
+    text-align:center;
+    border:1px solid #e1ede8;
+  }
+  .feature .icon{font-size:22px;display:block;margin-bottom:6px;}
+  .feature .txt{font-size:12.5px;color:var(--muted);font-weight:bold;}
+
+  .contact-box{
+    margin:18px 20px 0;
+    background:var(--bg);
+    border:1px dashed #b9d6cb;
+    border-radius:14px;
+    padding:14px;
+    text-align:center;
+  }
+  .contact-box .phone{
+    font-size:22px;
+    font-weight:900;
+    color:var(--primary-dark);
+    direction:ltr;
+    display:inline-block;
+    letter-spacing:1px;
+  }
+  .contact-box .phone-label{
+    font-size:12px;
+    color:var(--muted);
+    margin-bottom:4px;
+  }
+
+  .cta{
+    display:flex;
+    gap:10px;
+    padding:16px 20px 6px;
+  }
+  .btn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 8px;
+    border-radius:14px;
+    font-weight:bold;
+    font-size:14.5px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:active{transform:scale(.96);}
+  .btn-call{
+    background:linear-gradient(135deg,#1f9d80,var(--primary-dark));
+    color:#fff;
+    box-shadow:0 8px 18px rgba(14,124,102,.35);
+  }
+  .btn-whatsapp{
+    background:linear-gradient(135deg,#34e08a,var(--whatsapp));
+    color:#fff;
+    box-shadow:0 8px 18px rgba(37,211,102,.35);
+  }
+  .btn svg{width:18px;height:18px;flex-shrink:0;}
+
+  .pulse-wrap{
+    padding:6px 20px 18px;
+  }
+  .pulse-btn{
+    display:block;
+    text-align:center;
+    background:var(--danger);
+    color:#fff;
+    padding:13px;
+    border-radius:14px;
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none;
+    animation:pulse 1.8s infinite;
+    box-shadow:0 8px 20px rgba(214,69,69,.35);
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(214,69,69,.5);}
+    70%{box-shadow:0 0 0 12px rgba(214,69,69,0);}
+    100%{box-shadow:0 0 0 0 rgba(214,69,69,0);}
+  }
+
+  .divider{
+    height:1px;
+    background:#e7efec;
+    margin:14px 20px;
+  }
+
+  footer{
+    text-align:center;
+    padding:14px 16px 20px;
+    font-size:11.5px;
+    color:var(--muted);
+    line-height:1.9;
+  }
+  footer .rights{
+    font-size:11px;
+    opacity:.75;
+  }
+  footer .designer{
+    margin-top:6px;
+    font-size:12.5px;
+    font-weight:bold;
+  }
+  footer .designer a{
+    color:var(--whatsapp);
+    text-decoration:none;
+    font-weight:bold;
+    direction:ltr;
+    display:inline-block;
+  }
+  footer .designer a:hover{
+    text-decoration:underline;
+  }
+
+  .toast{
+    position:fixed;
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%) translateY(20px);
+    background:#123;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:999px;
+    font-size:13px;
+    opacity:0;
+    transition:all .3s ease;
+    pointer-events:none;
+    z-index:99;
+    white-space:nowrap;
+  }
+  .toast.show{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
+  }
+
+  @media (max-width:360px){
+    .hero h1{font-size:21px;}
+    .offer .price{font-size:19px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="card">
+
+    <div class="hero">
+      <span class="badge">خدمة موثوقة ومضمونة</span>
+      <h1>مكافحة ورش الحشرات المحترفة</h1>
+      <p class="sub">حلول فعّالة وآمنة للقضاء على جميع أنواع الحشرات نهائيًا</p>
+      <div class="cities">
+        <span>جازان</span>
+        <span>أبو عريش</span>
+        <span>صامطة</span>
+        <span>صبيا</span>
+        <span>بيش</span>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="label">عرض خاص لفترة محدودة</div>
+      <div class="price">خصم يصل إلى 30% + ضمان بعد الرش</div>
+      <div class="note">اتصل الآن واحصل على معاينة مجانية</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="dot"></span> خدماتنا</h2>
+      <ul class="services-list">
+        <li>رش المبيدات الآمنة</li>
+        <li>مكافحة الصراصير</li>
+        <li>مكافحة النمل الأبيض</li>
+        <li>مكافحة القوارض</li>
+        <li>مكافحة البق والناموس</li>
+        <li>تعقيم وتعطير المنازل</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="dot"></span> مميزاتنا</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="icon">🛡️</span>
+          <span class="txt">مواد آمنة ومعتمدة</span>
+        </div>
+        <div class="feature">
+          <span class="icon">⏱️</span>
+          <span class="txt">استجابة سريعة</span>
+        </div>
+        <div class="feature">
+          <span class="icon">✅</span>
+          <span class="txt">ضمان بعد الخدمة</span>
+        </div>
+        <div class="feature">
+          <span class="icon">💰</span>
+          <span class="txt">أسعار مناسبة</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <div class="phone-label">للتواصل والاستفسار والحجز</div>
+      <div class="phone">0557889258</div>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn-call" href="tel:0557889258" onclick="showToast('جاري الاتصال...')">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+        اتصل الآن
+      </a>
+      <a class="btn btn-whatsapp" href="https://wa.me/966557889258?text=مرحباً%2C%20أرغب%20بالاستفسار%20عن%20خدمة%20مكافحة%20الحشرات" target="_blank" rel="noopener" onclick="showToast('جاري فتح واتساب...')">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.87 11.87 0 0012.03 0C5.46 0 .12 5.34.12 11.9c0 2.1.55 4.14 1.6 5.94L0 24l6.32-1.66a11.86 11.86 0 005.71 1.46h.01c6.57 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.42-8.42zM12.04 21.5h-.01a9.6 9.6 0 01-4.9-1.34l-.35-.21-3.75.98 1-3.66-.23-.37a9.58 9.58 0 01-1.47-5.1c0-5.3 4.32-9.62 9.63-9.62a9.56 9.56 0 016.8 2.82 9.55 9.55 0 012.82 6.8c0 5.3-4.32 9.7-9.54 9.7zm5.27-7.2c-.29-.14-1.7-.84-1.96-.94-.26-.1-.46-.14-.65.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.29-.02-.44.13-.58.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.57-.9-2.15-.24-.57-.48-.5-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.03 2.82 1.18 3.01.14.19 2.03 3.1 4.92 4.35.69.3 1.22.48 1.64.61.69.22 1.32.19 1.81.11.55-.08 1.7-.7 1.94-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.19-.55-.34z"/></svg>
+        واتساب
+      </a>
+    </div>
+
+    <div class="pulse-wrap">
+      <a class="pulse-btn" href="tel:0557889258">📞 اضغط هنا للاتصال الفوري</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <footer>
+      <div class="rights">© جميع الحقوق محفوظة - مكافحة ورش الحشرات</div>
+      <div class="designer">
+        تم التصميم بواسطة م. نجوى إبراهيم -
+        <a href="https://wa.me/201029095046" target="_blank" rel="noopener">+20 10 29095046</a>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  function showToast(msg){
+    var t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(function(){
+      t.classList.remove('show');
+    }, 1800);
+  }
+</script>
+
+</body>
+</html>
